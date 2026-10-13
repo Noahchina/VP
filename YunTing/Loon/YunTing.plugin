@@ -1,6 +1,6 @@
-#!name=云听-全国电台海量有声书
-#!desc=云听 全国电台/有声听书解锁会员
-#!date=2026-01-21
+#!name=云听-全国电台/有声听书解锁会员
+#!desc=版本支持：7.0.35
+#!date=2024-02-11
 #!category=🐹 BOBO Premium
 #!author=叮当猫chxm1023[https://github.com/chxm1023/Rewrite]
 #!icon=https://raw.githubusercontent.com/Noahchina/Loon/main/icons/yunting.png
@@ -8,7 +8,7 @@
 
 [Script]
 # > 云听-全国电台有声书解锁会员
-response if ${url} ~= /(^https?:\/\/(ytmsout|ytapi|getway)\.radio\.cn|60\.205\.171\.165)\/(contentBiz|publish|rights|(user|ytsrv\/srv)\/(appUser|webPage)\/getUserInfo|app.+)/i then script("https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YunTing/JS/YunTing.js") with tag="云听-全国电台有声书解锁会员", timeout=60, requires_body=true
+response if ${url} ~= /(^https?:\/\/(ytmsout|ytapi|getway)\.radio\.cn|60\.205\.171\.165)\/(contentBiz|publish|rights|(user|ytsrv\/srv)\/(appUser|webPage)\/getUserInfo|app.+)/i then script("https://raw.githubusercontent.com/Noahchina/Loon/main/Scripts/YunTing.js") with tag="云听-全国电台有声书解锁会员", timeout=60, requires_body=true
 response if ${url} ~= /^https:\/\/ytmsout\.radio\.cn\/resourceConnector\/connector\/getByPage/i then script("https://raw.githubusercontent.com/Noahchina/Loon/main/Scripts/yunting_ad.js") with requires_body=true
 
 [MITM]
